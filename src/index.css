@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --bond: #FAFBFD;
+  --paper: #FFFFFF;
+  --ultramarine: #1B3DE5;
+  --ochre: #D98A12;
+  --emerald: #0E9F6E;
+  --slate: #111827;
+  --slate-muted: #5B6475;
+  --grid: #E2E8F0;
+  --border: #CBD5E1;
+}
+
+@theme inline {
+  --font-sans: "Albert Sans", system-ui, sans-serif;
+  --font-mono: "Fira Code", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: var(--bond);
+  color: var(--slate);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background-color: var(--ultramarine);
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ultramarine);
+  outline-offset: 2px;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
